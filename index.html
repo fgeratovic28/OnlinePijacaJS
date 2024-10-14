@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Pijaca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dobrodošli na online pijacu!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Početna</a></li>
+                <li><a href="#proizvodi">Proizvodi</a></li>
+                <li><a href="#o_nama">O nama</a></li>
+                <li><a href="#forma-registracija">Registracija</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider">
+        <img src="pijace slike/liman.jpg" alt="Slika 1" class="trenutna-slika">
+        <button id="prethodniBtn" class="dugme-slider prethodno-dugme">&lt;</button>
+        <button id="sledeciBtn" class="dugme-slider sledece-dugme">&gt;</button>
+    </div>
+    
+    
+<div class="sortiranje">
+    <select id="kriterijum-sortiranja">
+        <option value="ime">Ime</option>
+        <option value="cena">Cena</option>
+        <option value="kategorija">Kategorija</option>
+    </select>
+    <button id="dugme-sortiranja" onclick="sortirajProizvode()">Sortiraj</button>
+
+</div>
+
+    <main>
+        <section id="proizvodi">
+
+        </section>
+        
+        <section id="korpa">
+            <h2>Korpa</h2>
+            <p id="poruka-korpa"></p>
+            <ul id="stavke-korpe"></ul>
+            <p>Ukupno: <span id="ukupna-cena">0.00 din</span></p>
+            <button id="dugme-kupovine" onclick="kupovina()">Kupi</button>
+        </section>
+    </main>
+
+    <section id="o_nama">
+        <h2>O nama</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+            Explicabo hic cum, nemo illo aut voluptates voluptas? <br>
+            Tempore vel officia cumque ex consequatur, <br>
+            maiores est rem numquam. Suscipit magni dicta nisi. <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+            Explicabo hic cum, nemo illo aut voluptates voluptas? <br>
+            Tempore vel officia cumque ex consequatur, <br>
+            maiores est rem numquam. Suscipit magni dicta nisi. <br>
+        </p>
+
+    </section>
+   
+
+    <footer>
+        <h2>Registracija</h2>
+        <form id="forma-registracija">
+            <div id="poruka"></div>
+            <label for="korisnicko_ime">Korisničko ime:</label>
+            <input type="text" id="korisnicko_ime" name="korisnicko_ime" placeholder="Unesite korisnicko ime...">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Unesite vas email...">
+            <label for="broj_telefona">Broj telefona:</label>
+            <input type="tel" id="broj_telefona" name="broj_telefona" placeholder="Unesite vas broj telefona(brojevima)">
+            <label for="lozinka">Lozinka:</label>
+            <input type="password" id="lozinka" name="lozinka" placeholder="Unesite lozinku(malo slovo, veliko slovo, znak...)">
+            <button type="submit">Registruj se</button>
+        </form>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
